@@ -1,0 +1,98 @@
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #27272a;
+}
+
+:root { 
+    --grid-cols: 1;
+    --grid-rows: 1; 
+}
+
+.top {
+    height: 20vh;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+#label-container {
+    color: #fafafa;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#game-container {
+    display: grid;
+    grid-gap: .4em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    padding: 2em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.item-button {
+    /* padding: 3em;
+    border: 1px solid black;
+    text-align: center; */
+    cursor: pointer;
+    display:inline-block;
+    /* padding: .5em; */
+    height: 2em;
+    width: 2em;
+    border:0 solid #FFFFFF;
+    /* border-radius:0.12em; */
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.item-button:hover {
+    background-color: gray;
+}
+
+.item-button:active {
+    background-color: black;
+}
+
+#reset-button {
+    padding: .8em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: 1px solid black;
+    text-align: center; 
+    cursor: pointer;
+    display:inline-block;
+    /* padding: .5em; */
+    border:0 solid #FFFFFF;
+    border-radius:0.12em; 
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight: bold;
+    background-color: #404040;
+    font-size: 1.5em;
+    color: #fafafa;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+#reset-button:hover {
+    background-color: gray;
+}
+
+#reset-button:active {
+    background-color: black;
+}
